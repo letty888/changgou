@@ -52,10 +52,30 @@ public class WXPayServiceImpl implements WXPayService {
     @Override
     public Map queryOrder(String orderId) {
         try {
-            Map<String ,String> map = new HashMap(0);
-            map.put("out_trade_no",orderId);
+            Map<String, String> map = new HashMap(0);
+            map.put("out_trade_no", orderId);
             Map<String, String> resultMap = wxPay.orderQuery(map);
             return resultMap;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+    /**
+     * 基于微信关闭订单
+     *
+     * @param orderId 订单id
+     * @return Map
+     */
+    @Override
+    public Map closeOrder(String orderId) {
+
+        try {
+            Map<String, String> map = new HashMap<>(0);
+            map.put("out_trade_no", orderId);
+            return wxPay.closeOrder(map);
         } catch (Exception e) {
             e.printStackTrace();
             return null;

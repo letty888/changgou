@@ -60,12 +60,21 @@ public class RabbitMQConfig {
     /**
      * 支付成功队列的名称
      */
-    public static final String ORDER_PAY="order_pay";
+    public static final String ORDER_PAY = "order_pay";
 
+    /**
+     * 确认收货的队列
+     */
+    public static final String ORDER_TACK = "order_tack";
+
+    @Bean(ORDER_TACK)
+    public Queue ORDER_TACK() {
+        return new Queue(ORDER_TACK);
+    }
 
     @Bean(ORDER_PAY)
-    public Queue queue(){
-        return  new Queue(ORDER_PAY);
+    public Queue ORDER_PAY() {
+        return new Queue(ORDER_PAY);
     }
 
 
