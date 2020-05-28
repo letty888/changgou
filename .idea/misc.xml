@@ -17,6 +17,10 @@
         <option value="$PROJECT_DIR$/changgou_service/changgou_service_pay/pom.xml" />
         <option value="$PROJECT_DIR$/changgou_service_api/changgou_service_pay_api/pom.xml" />
         <option value="$PROJECT_DIR$/changgou_task/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou_service_api/changgou_service_seckill_api/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_seckill/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou_web/changgou_web_seckill/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_consume/pom.xml" />
       </list>
     </option>
   </component>
